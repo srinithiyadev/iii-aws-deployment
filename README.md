@@ -10,9 +10,9 @@ VM2 and VM3 have zero inbound from internet. they connect outbound to VM1 via We
 
 ## instance types
 
-- VM1 t3.small — runs iii engine binary only
-- VM2 t3.medium — typescript caller-worker
-- VM3 t3.xlarge — python inference-worker + gemma 3 270M (needs 16GB RAM)
+* VM1 t3.micro — runs iii engine binary only
+* VM2 t3.micro — typescript caller-worker
+* VM3 t3.micro — python inference-worker + gemma 3 270M
 
 ## deploy
 
