@@ -1,0 +1,9 @@
+variable "project"           { type = string }
+variable "ami_id"            { type = string }
+variable "ssh_public_key"    { type = string }
+variable "public_subnet_id"  { type = string }
+variable "private_subnet_id" { type = string }
+variable "api_gateway_sg_id" { type = string }
+variable "workers_sg_id"     { type = string }
+variable "iii_version"       { type = string }
+variable "repo_url"          { type = string }
