@@ -1,0 +1,6 @@
+aws_region     = "us-east-1"
+project        = "alchemyst"
+iii_version    = "v0.10.0"
+ssh_public_key = "ssh-rsa AAAAB3NzaC1yc..."
+admin_cidr     = "YOUR_IP/32"
+repo_url       = "https://github.com/srinithiyadev/iii-aws-deployment.git"
