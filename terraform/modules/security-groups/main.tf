@@ -4,7 +4,7 @@ resource "aws_security_group" "api_gateway" {
   vpc_id      = var.vpc_id
 
   ingress {
-    description = "iii HTTP engine — public API"
+    description = "iii HTTP engine - public API"
     from_port   = 3111
     to_port     = 3111
     protocol    = "tcp"
@@ -12,7 +12,7 @@ resource "aws_security_group" "api_gateway" {
   }
 
   ingress {
-    description = "iii WebSocket — workers only"
+    description = "iii WebSocket - workers only"
     from_port   = 49134
     to_port     = 49134
     protocol    = "tcp"
@@ -39,7 +39,7 @@ resource "aws_security_group" "api_gateway" {
 
 resource "aws_security_group" "workers" {
   name        = "${var.project}-workers-sg"
-  description = "Private workers — no internet inbound"
+  description = "Private workers - no internet inbound"
   vpc_id      = var.vpc_id
 
   ingress {

@@ -1,0 +1,5 @@
+aws_region     = "us-east-1"
+project        = "alchemyst"
+ssh_public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCvWa8FEsdlOWWmIyR8GxBecxSQqmUyQQBKUjZkw8hIw0M6ZlX8UPIXpmzscQvInmsEhevRaBZZCXMPvdqU66qq6L2sVDKv3E1Hr1Mw8/CPxqE/M2MwYJa2iTNGg3zBdiA6byk5y/yGRIpdn2q0Aopxw62sFdxKmme486g5Nuncmg+amaMy5vJ5lHX1x3rgjiDUkfCvlU57tsu4kk3oXu3zBDlQ0BjB6xy5Xl/jExFypGKBsFruXP4+R1otaDfmhAj6twU6SIhbFZR5NS5Rqyzwt91OLVllEp9DvdNbkKaNda7nExduSI9phgD7pmqfEBiihwzmhYAEpPKNIHIzacKwO+QAWHIowMEBx5R2M7krRMB75KF1zpiCv4FRvMPmHJizviQxOiUTt1WwtNMU4fQ6YTZtOgWWpRLTo2gickruMtzRGbvPVJdSqDyAkhKOrON0xnMF9GzMnrE6+wOTklaVd4lrID96nY/rHZ+HIq7AFXw/RPZexn6y82B6St+t76K9qRj9Wbx6Zzhb5eCZQJI2D6cad6IUty0C5VgV2ooVGdk3aYkr7qJ2hIe702WF7vB9Tx51cMCC91dOHERgO+GxbiLHsUpV6yGRiaXjtDUFaDeoHbdR7oMX64sduh3rOPiYCBw3kN3tObhU7m2CGHi6rylSKb1mlzRyjFlZGkj8EQ== srinithiya@SRINITHIYA"
+admin_cidr     = "157.51.85.40/32"
+repo_url       = "https://github.com/srinithiyadev/iii-aws-deployment.git"

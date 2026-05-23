@@ -5,7 +5,7 @@ resource "aws_key_pair" "this" {
 
 resource "aws_instance" "api_gateway" {
   ami                    = var.ami_id
-  instance_type          = "t3.small"
+  instance_type          = "t3.micro"
   subnet_id              = var.public_subnet_id
   vpc_security_group_ids = [var.api_gateway_sg_id]
   key_name               = aws_key_pair.this.key_name
@@ -15,7 +15,7 @@ resource "aws_instance" "api_gateway" {
   })
 
   root_block_device {
-    volume_size = 20
+    volume_size = 30
     volume_type = "gp3"
   }
 
@@ -24,7 +24,7 @@ resource "aws_instance" "api_gateway" {
 
 resource "aws_instance" "caller_worker" {
   ami                    = var.ami_id
-  instance_type          = "t3.medium"
+  instance_type          = "t3.micro"
   subnet_id              = var.private_subnet_id
   vpc_security_group_ids = [var.workers_sg_id]
   key_name               = aws_key_pair.this.key_name
@@ -35,7 +35,7 @@ resource "aws_instance" "caller_worker" {
   })
 
   root_block_device {
-    volume_size = 20
+    volume_size = 30
     volume_type = "gp3"
   }
 
@@ -46,7 +46,7 @@ resource "aws_instance" "caller_worker" {
 
 resource "aws_instance" "inference_worker" {
   ami                    = var.ami_id
-  instance_type          = "t3.xlarge"
+  instance_type          = "t3.micro"
   subnet_id              = var.private_subnet_id
   vpc_security_group_ids = [var.workers_sg_id]
   key_name               = aws_key_pair.this.key_name
